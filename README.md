@@ -5,4 +5,4 @@
 
 渣画质效果演示:
 
-![Alt Text](https://github.com/jiashuaizhang/cube/blob/master/files/cube.gif) 
+![Alt Text](https://github.com/jiashuaizhang/cube/blob/master/files/demo.gif) 
