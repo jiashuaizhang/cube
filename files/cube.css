@@ -1,0 +1,67 @@
+/*立方体效果*/
+.wrap {
+    width: 120px;
+    height: 200px;
+    margin: 0 auto;
+/*  margin: 20px;
+    display: table-cell;
+	position: fixed;
+	top: 15px;
+    right: 15px; */
+	vertical-align: middle;
+    text-align: center;
+    z-index: 22;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-80deg);
+    animation: rotate linear 20s infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0.8;
+    transition: all .4s;
+}
+
+.cube .out_front {
+    transform: rotateY(0deg) translateZ(60px);
+}
+
+.cube .out_back {
+    transform: translateZ(-60px) rotateY(180deg);
+}
+
+.cube .out_left {
+    transform: rotateY(-90deg) translateZ(60px);
+}
+
+.cube .out_right {
+    transform: rotateY(90deg) translateZ(60px);
+}
+
+.cube .out_top {
+    transform: rotateX(90deg) translateZ(60px);
+}
+
+.cube .out_bottom {
+    transform: rotateX(-90deg) translateZ(60px);
+}
